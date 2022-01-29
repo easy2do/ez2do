@@ -1,0 +1,145 @@
+/*
+    Theme Name: Ez2do;
+    Date: May 2021;
+    Discription: Web Development & Graphic Design;
+    Version: 1.0;
+    Author: Muhannad Sibay;
+    Author:https://ez2do.co/;
+*/
+:root {
+	--mainColor: #426ab3;
+}
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--mainColor);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #1249ad;
+}
+
+/* --------------- /scrollbar --------------- */
+
+body {
+	background-color: black;
+}
+
+span {
+	color: var(--mainColor);
+}
+
+.Emty {
+	height: 300px;
+	background-image: url("../Images/Abstract.jpg");
+	margin-bottom: 230px;
+	margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+	#Web-design .container {
+		position: relative;
+		text-align: left;
+		color: darkgray;
+		line-height: 3.2rem !important;
+		letter-spacing: 2.2px;
+	}
+	#Web-design h3 {
+		color: #fff;
+		margin-top: 60px;
+	}
+	#Web-design p {
+		margin-top: 40px;
+	}
+	#Web-design .top-left {
+		position: relative !important;
+		top: 120px !important;
+		margin: 0px 15px 0px 15px;
+		width: 425px;
+	}
+	#Web-design .image1 {
+		top: -120px !important;
+		right: 5px !important;
+	}
+	#Web-design .bgImg {
+		height: 400px;
+		object-fit: cover;
+		object-position: 100% 100%;
+	}
+
+	#Grafic-design .container {
+		position: relative;
+		color: darkgray;
+		line-height: 3.2rem !important;
+		letter-spacing: 2.2px;
+		margin-bottom: 200px;
+	}
+	#Grafic-design .bgImg {
+		width: 90%;
+		z-index: 1;
+	}
+	#Grafic-design .image1 {
+		position: absolute;
+		top: -90px;
+		height: 800px;
+		z-index: -2;
+		left: -120px;
+	}
+	#Grafic-design h3 {
+		width: 50%;
+		color: #fff;
+		margin-top: 30px;
+	}
+	#Grafic-design p {
+		margin-top: 40px;
+	}
+	#Grafic-design .top-Right {
+		position: absolute;
+		top: 85px;
+		font-size: 1.25rem;
+	}
+}
+#Web-design .container {
+	position: relative;
+	text-align: left;
+	color: darkgray;
+	line-height: 3.2rem !important;
+	letter-spacing: 2.2px;
+}
+#Web-design {
+	margin-bottom: 350px;
+}
+#Web-design h3 {
+	color: #fff;
+	margin-top: 60px;
+}
+#Web-design p {
+	margin-top: 40px;
+}
+#Web-design .top-left {
+	text-align: justify;
+	width: 600px;
+	position: absolute;
+	top: 85px;
+	font-size: 1.25rem;
+}
+#Web-design .image1 {
+	position: absolute;
+	top: 0;
+	right: -95px;
+	height: 800px;
+	width: auto;
+	transform: scaleX(-1);
+	z-index: 1;
+}
+#Web-design .bgImg {
+	position: relative;
+	width: 100%;
+	top: 85px;
+	z-index: 0;
+	max-height: 642px;
+}

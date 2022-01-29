@@ -1,0 +1,504 @@
+/*
+    Theme Name: Ez2do;
+    Date: May 2021;
+    Discription: Web Development & Graphic Design;
+    Version: 1.0;
+    Author: Muhannad Sibay;
+    Author:https://ez2do.co/;
+*/
+:root {
+	--mainColor: #426ab3;
+}
+::-webkit-scrollbar {
+	width: 20px;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--mainColor);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #1249ad;
+}
+
+/* --------------- /scrollbar --------------- */
+
+body {
+	background-color: black;
+}
+.container {
+	padding: 0px;
+}
+/* --------------- media (max-width: 576px) --------------- */
+@media (max-width: 768px) {
+	.top-bar {
+		letter-spacing: 0px;
+	}
+	.navbar-toggler {
+		background-color: rgba(0, 100, 255, 0.2);
+	}
+	.logo {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.navbar {
+		justify-content: space-between;
+	}
+	li {
+		text-align: center;
+		background-color: rgba(0, 100, 255, 0.2);
+	}
+	li a:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+		border-bottom: solid 1px #426ab3;
+		margin-bottom: 10px;
+	}
+	.collapse ul li {
+		margin-bottom: 5px;
+	}
+	.fixed-top {
+		position: static;
+	}
+	.weLove {
+		margin: 0 20px 0 20px;
+		height: 300px;
+		padding-top: 0px !important;
+	}
+	#About {
+		height: 900px;
+		padding-top: 0px !important;
+		padding-right: 2.5rem;
+	}
+	#services {
+		padding-top: 0px !important;
+		margin-left: 10px !important;
+	}
+	#services .row {
+		margin-top: 0px !important;
+	}
+	#services .our-philosophy {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#services img {
+		height: 300px !important;
+	}
+	#Web-design h3 {
+		color: #fff;
+		margin-top: 60px;
+	}
+	#Web-design .top-left {
+		position: relative !important;
+		top: 120px !important;
+		margin: 0px 15px 0px 15px;
+		width: 425px !important;
+	}
+	#Web-design .image1 {
+		top: -120px !important;
+		right: 5px !important;
+	}
+	#Web-design .bgImg {
+		height: 400px;
+		object-fit: cover;
+		object-position: 100% 100%;
+	}
+	.clients .container .row .logos img {
+		width: 100%;
+	}
+	#Grafic-design .top-Right {
+		margin-left: 20px;
+	}
+	#Grafic-design .image1 {
+		height: 500px !important;
+		left: 10px !important;
+	}
+	#Grafic-design H3 {
+		margin-top: 110px !important;
+	}
+	#Grafic-design .container {
+		line-height: 2.5rem !important;
+		letter-spacing: 2px !important;
+	}
+	#Grafic-design p {
+		margin-right: 30px;
+	}
+	#Hosting {
+		margin-bottom: 0px !important;
+	}
+	#Hosting .image1 {
+		right: 0px !important;
+		width: 400px !important;
+		top: -210px !important;
+	}
+	#Hosting .bgImg {
+		position: static !important;
+		width: 100% !important;
+		height: 340px !important;
+		object-fit: cover !important;
+		object-position: 100% 100% !important;
+		margin-bottom: 60px;
+	}
+	#Hosting .top-left {
+		position: static !important;
+	}
+	#Hosting h3 {
+		margin-left: 30px !important;
+	}
+	#Hosting p {
+		width: 100% !important;
+		padding: 0px 30px 0px 30px;
+	}
+	.clients .logos {
+		width: 70% !important;
+	}
+	.Contact form {
+	}
+}
+/* --------------- media ((min-width: 992px) --------------- */
+@media (min-width: 992px) {
+	.navbar {
+		margin-left: 0px;
+	}
+	.logo {
+		margin-right: 0;
+	}
+}
+
+.container-fluid,
+.row,
+.col {
+	--bs-gutter-x: 0rem;
+	margin-top: 15px !important;
+	margin-right: 0;
+}
+
+.mainHeader {
+	background-color: black;
+}
+nav {
+	background-color: black;
+}
+span {
+	color: var(--mainColor);
+}
+.top-bar {
+	font-family: 'Lato';
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+.top-bar a {
+	text-decoration: none;
+}
+/* --------------------------------------------- </top-bar> --------------------------------------------- */
+
+.line {
+	border-bottom: solid 1px var(--mainColor);
+}
+.logo {
+	margin-left: 38px;
+}
+/* --------------------------------------------- <nav-bar> --------------------------------------------- */
+
+nav .navbar-collapse ul li {
+	font-family: 'Lato';
+	font-size: 1.2em;
+	color: var(--mainColor);
+	padding-top: 10px;
+}
+nav .navbar-collapse ul li a {
+	color: var(--mainColor);
+}
+.nav-link {
+	padding: 0;
+}
+nav .navbar-collapse ul li a:hover {
+	color: #fff;
+	border-bottom: solid 3px var(--mainColor);
+	border-top: solid 3px var(--mainColor);
+}
+.social :hover {
+	color: var(--mainColor);
+}
+.navbar-collapse {
+	flex-grow: 0;
+}
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.social {
+	font-size: 1.3em;
+}
+.social a {
+	color: #fff !important;
+}
+/* --------------------------------------------- </nav-bar> --------------------------------------------- */
+
+.success {
+	padding-top: 12rem;
+}
+.weLove {
+	color: var(--mainColor);
+	text-align: center;
+	letter-spacing: 15px;
+	font-family: 'Nothing You Could Do', cursive;
+	text-transform: uppercase;
+	height: 150px;
+	font-size: 2em;
+	font-weight: bolder;
+	padding-top: 60px;
+}
+/* --------------------------------------------- <About> --------------------------------------------- */
+
+#About {
+	margin-bottom: 60px;
+	padding-top: 120px;
+}
+.about {
+	width: 100%;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: justify;
+	color: darkgray;
+}
+.lead {
+	color: darkgray;
+}
+/* --------------------------------------------- </About> --------------------------------------------- */
+
+.Black {
+	min-height: 450px;
+	background: url("../Images/Black-D.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+.ez2do-Black {
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 450px;
+}
+.BlueStone {
+	min-height: 450px;
+	background: url("../Images/BlueStone.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+.ez2do-BlueStone {
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 450px;
+}
+/* --------------------------------------------- <services> --------------------------------------------- */
+
+#services {
+	padding-top: 160px;
+	color: #fff;
+	text-align: justify;
+	margin-bottom: 160px;
+}
+/* #services h2 {
+	padding-top: 20px;
+}
+ */
+#services p {
+	color: darkgray;
+}
+/* #services img {
+	width: auto;
+	height: 500px;
+}
+ */
+.our-philosophy p {
+	line-height: 3rem !important;
+	letter-spacing: 1px;
+}
+/* --------------------------------------------- </services> --------------------------------------------- */
+
+#Web-design .container {
+	position: relative;
+	text-align: left;
+	color: darkgray;
+	line-height: 2.8rem !important;
+	letter-spacing: 1.7px;
+}
+#Web-design {
+	margin-bottom: 350px;
+}
+#Web-design h3 {
+	color: #fff;
+	margin-top: 60px;
+}
+#Web-design p {
+	margin-top: 40px;
+}
+#Web-design .top-left {
+	text-align: justify;
+	width: 540px;
+	position: absolute;
+	top: 85px;
+	font-size: 1.25rem;
+}
+#Web-design .image1 {
+	position: absolute;
+	top: -20px;
+	right: -95px;
+	height: 750px;
+	width: auto;
+	transform: scaleX(-1);
+	z-index: 1;
+}
+#Web-design .bgImg {
+	position: relative;
+	width: 100%;
+	top: 85px;
+	z-index: 0;
+}
+/* --------------------------------------------- </Web-design> --------------------------------------------- */
+
+#Grafic-design .container {
+	position: relative;
+	color: darkgray;
+	line-height: 3.2rem;
+	letter-spacing: 2.2px;
+	margin-bottom: 200px;
+}
+#Grafic-design .bgImg {
+	position: relative;
+	width: 90%;
+	z-index: 1;
+}
+#Grafic-design .image1 {
+	position: absolute;
+	top: -100px;
+	height: 750px;
+	z-index: -2;
+	left: -110px;
+}
+#Grafic-design h3 {
+	color: #fff;
+	margin-top: 30px;
+}
+#Grafic-design p {
+	margin-top: 40px;
+	text-align: justify;
+}
+#Grafic-design .top-Right {
+	top: 85px;
+	font-size: 1.25rem;
+}
+/* ------------------------------------------- </Grafic-design> ------------------------------------------ */
+
+#Hosting .container {
+	position: relative;
+	text-align: left;
+	color: darkgray;
+	line-height: 3.2rem !important;
+	letter-spacing: 2.2px;
+}
+#Hosting {
+	margin-bottom: 240px;
+}
+#Hosting h3 {
+	color: #fff;
+	margin-top: 60px;
+}
+#Hosting p {
+	margin-top: 40px;
+	width: 40%;
+	text-align: justify;
+}
+#Hosting .top-left {
+	position: absolute;
+	top: 85px;
+	font-size: 1.25rem;
+}
+#Hosting .image1 {
+	position: absolute;
+	top: -20px;
+	right: -95px;
+	height: 750px;
+	width: auto;
+	transform: scaleX(-1);
+	z-index: 1;
+}
+#Hosting .bgImg {
+	position: relative;
+	width: 93%;
+	top: 85px;
+	z-index: 0;
+	right: -160px;
+}
+/* --------------------------------------------- </Hosting> --------------------------------------------- */
+
+.color {
+	min-height: 450px;
+	background: url("../Images/Color.jpg") no-repeat center center fixed;
+	background-size: 100%;
+}
+.ez2do-color {
+	min-height: 450px;
+}
+#clients {
+	color: #fff;
+	text-align: center;
+	padding-top: 180px;
+}
+
+.satisfy {
+	font-family: 'Lato';
+	font-size: 1.6em;
+	color: var(--mainColor);
+	letter-spacing: 5px;
+}
+.logos img {
+	box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
+.logos img:hover {
+	-webkit-filter: grayscale(0);
+	filter: none;
+}
+/* --------------------------------------------- </clients> --------------------------------------------- */
+
+.Contact {
+	background: url("../Images/C0100.jpg") no-repeat center center fixed;
+	width: 100%;
+	min-height: 600px;
+	padding-top: 200px;
+	background-size: cover;
+}
+/* --------------------------------------------- <footer> --------------------------------------------- */
+
+footer .container .row {
+	font-family: 'Lato';
+	letter-spacing: 1px;
+}
+footer .container .row .social-footer {
+	font-size: 1.3em;
+}
+.social-footer a {
+	color: #fff !important;
+}
+textarea.form-control {
+	min-height: calc(6em + .75rem + 2px) !important;
+}
+.Contact i {
+	color: var(--mainColor);
+}
+.Contact input,
+.Contact textarea {
+	background: rgba(82, 78, 78, 0.5);
+	color: #fff;
+}
+footer {
+	border-top: solid 1px var(--mainColor);
+}
+footer .fa-facebook {
+	padding-left: 60px;
+}
+#btn-back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+}
+/*  var(--mainColor) */
